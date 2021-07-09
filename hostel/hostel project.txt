@@ -1,0 +1,681 @@
+//************************ class hmain ********************
+
+
+
+import hpack.faci;
+import hpack.hpack1.stu_info;
+import java.util.Scanner;
+
+
+public class hmain{
+	
+	public static void main(String[] args){
+	
+		int c,h;
+		char y,x;
+		
+		System.out.println("***   \t\t Enter our project click any number without 0  ***  ");
+		Scanner sc = new Scanner(System.in);
+		c = sc.nextInt();
+		
+		while( c!=0){
+		
+		System.out.println("\n\t\t\t!!!WELCOME TO OUR HOSTEL!!!\n\n");
+		System.out.println("Which hostel do you want to get in ? ");
+		System.out.println("1.Bell ");
+		System.out.println("2.Shimul ");
+		System.out.println("3.Daisy ");
+		System.out.println("4.Exit...If you Exit Press only 0..\n\n ");
+		System.out.println("Your input: ");
+		
+		c = sc.nextInt();
+		
+		if(c==1){
+			
+			System.out.println("Building name : Beli ");
+			System.out.println("Available seats : 25 ");
+			
+			System.out.println("\nWhich room do you want ? ");
+			System.out.println("1. Master bed room ");
+			System.out.println("2. Semi master bed room ");
+			System.out.println("3. Regular Room ");
+			System.out.println("Your input: ");
+			
+			h = sc.nextInt();
+			switch(h){
+				
+				case 1:
+			
+				faci b = new faci(3,5000,"Single bed","Single cupb oard","Single study table");
+				b.showdetails();
+				System.out.println("\n\nAre you choise this room ?");
+				System.out.println("Enter Yes(y)or No(n) ");	
+				y = sc.next().charAt(0);
+				if (y=='y'||y=='Y'){
+					System.out.println("\nPlease first enter your id, name and mobile num");
+					
+					System.out.println("Input Student ID : ");
+					String id = sc.next();
+					
+					System.out.println("Input Student Name : ");
+					String name = sc.next();
+					
+					System.out.println("Input Student Mobile Number : ");
+					String mobileNo = sc.next();
+					stu_info st = new stu_info(id,name,mobileNo);
+					
+					System.out.println("\n\tOK!!!!Successfully enter your infromation");
+					System.out.println("Are you want to show your Hostel details now Yes(y/Y) or Not(n/N)");
+					System.out.println("Waiting for your input y or n :");
+					x = sc.next().charAt(0);
+					
+					if (x=='y'||x=='Y'){
+						
+						System.out.println("Your Building name : Beli ");
+						st.show();
+						b.show();
+
+					}
+					
+				}
+				
+				else if(y=='n'||y=='N'){
+				
+					
+				}
+				
+				break;
+				
+				case 2:
+				
+				
+					faci s = new faci(4,4500,"Single bed","Single cupboard","Single study table");
+					s.showdetails();
+					
+					
+					System.out.println("\n\nAre you choise this room ?");
+					System.out.println("Enter Yes(y)or No(n) ");	
+					y = sc.next().charAt(0);
+				
+					if (y=='y'||y=='Y'){
+					System.out.println("\nPlease first enter your id, name and mobile num");
+					
+					System.out.println("Input Student ID : ");
+					String id = sc.next();
+					
+					System.out.println("Input Student Name : ");
+					String name = sc.next();
+					
+					
+					System.out.println("Input Student Mobile Number : ");
+					String mobileNo = sc.next();
+					stu_info st = new stu_info(id,name,mobileNo);
+					
+					System.out.println("\n\tOK!!!!Successfully enter your infromation");
+					System.out.println("Are you want to show your Hostel details now Yes(y/Y) or Not(n/N)");
+					System.out.println("Waiting for your input y or n :");
+					x = sc.next().charAt(0);
+					
+					if (x=='y'||x=='Y'){
+						
+						System.out.println("Your Building name : Beli ");
+						st.show();
+						s.show();
+						
+					}
+					
+				}
+				
+				
+				else if(y=='n'||y=='N'){
+				
+				
+				}
+				break;
+				
+				case 3:
+				
+				faci d = new faci(3,3000,"Single bed","NO single cupboard ","Single study table");
+				d.showdetails();
+				
+				
+					System.out.println("\n\nAre you choise this room ?");
+					System.out.println("Enter Yes(y)or No(n) ");	
+					y = sc.next().charAt(0);
+				
+				if (y=='y'||y=='Y'){
+					System.out.println("\nPlease first enter your id, name and mobile num");
+					
+					System.out.println("Input Student ID : ");
+					String id = sc.next();
+					
+					System.out.println("Input Student Name : ");
+					String name = sc.next();
+					
+					
+					System.out.println("Input Student Mobile Number : ");
+					String mobileNo = sc.next();
+					stu_info st = new stu_info(id,name,mobileNo);
+					
+					System.out.println("\n\tOK!!!!Successfully enter your infromation");
+					System.out.println("Are you want to show your Hostel details now Yes(y/Y) or Not(n/N)");
+					System.out.println("Waiting for your input y or n :");
+					x = sc.next().charAt(0);
+					
+					if (x=='y'||x=='Y'){
+						
+						System.out.println("Your Building name : Beli ");
+						st.show();
+						d.show();
+						
+					}
+					
+				}
+				
+				else if(y=='n'||y=='N'){
+			
+					
+				}
+				
+				
+				break;
+					
+			}
+			
+		}
+		
+		
+		
+		else if(c==2){
+			
+			
+			System.out.println("Building name : Shimul ");
+			System.out.println("Available seats : 23 ");
+			
+			
+			System.out.println("\nWhich room do you want ? ");
+			System.out.println("1. Master bed room ");
+			System.out.println("2. Semi master bed room ");
+			System.out.println("3. Regular Room ");
+			System.out.println("Your input: ");
+			
+			h = sc.nextInt();
+			switch(h){
+				
+				case 1:
+			
+				faci b = new faci(3,5000,"Single bed","Single cupb oard","Single study table");
+				b.showdetails();
+				System.out.println("\n\nAre you choise this room ?");
+				System.out.println("Enter Yes(y)or No(n) ");	
+				y = sc.next().charAt(0);
+				if (y=='y'||y=='Y'){
+					System.out.println("\nPlease first enter your id, name and mobile num");
+					
+					System.out.println("Input Student ID : ");
+					String id = sc.next();
+					
+					System.out.println("Input Student Name : ");
+					String name = sc.next();
+					
+					System.out.println("Input Student Mobile Number : ");
+					String mobileNo = sc.next();
+					stu_info st = new stu_info(id,name,mobileNo);
+					
+					System.out.println("\n\tOK!!!!Successfully enter your infromation");
+					System.out.println("Are you want to show your Hostel details now Yes(y/Y) or Not(n/N)");
+					System.out.println("Waiting for your input y or n :");
+					x = sc.next().charAt(0);
+					
+					if (x=='y'||x=='Y'){
+						
+						System.out.println("Your Building name : Beli ");
+						st.show();
+						b.show();
+	
+					}
+					
+				}
+				
+				else if(y=='n'||y=='N'){
+				
+					
+				}
+				
+				break;
+				
+				case 2:
+				
+				
+					faci s = new faci(4,4500,"Single bed","Single cupboard","Single study table");
+					s.showdetails();
+					
+					
+					System.out.println("\n\nAre you choise this room ?");
+					System.out.println("Enter Yes(y)or No(n) ");	
+					y = sc.next().charAt(0);
+				
+					if (y=='y'||y=='Y'){
+					System.out.println("\nPlease first enter your id, name and mobile num");
+					
+					System.out.println("Input Student ID : ");
+					String id = sc.next();
+					
+					System.out.println("Input Student Name : ");
+					String name = sc.next();
+					
+					
+					System.out.println("Input Student Mobile Number : ");
+					String mobileNo = sc.next();
+					stu_info st = new stu_info(id,name,mobileNo);
+					
+					System.out.println("\n\tOK!!!!Successfully enter your infromation");
+					System.out.println("Are you want to show your Hostel details now Yes(y/Y) or Not(n/N)");
+					System.out.println("Waiting for your input y or n :");
+					x = sc.next().charAt(0);
+					
+					if (x=='y'||x=='Y'){
+						
+						System.out.println("Your Building name : Beli ");
+						st.show();
+						s.show();
+						
+					}
+					
+				}
+				
+				
+				else if(y=='n'||y=='N'){
+				
+				
+				}
+				break;
+				
+				case 3:
+				
+				faci d = new faci(3,3000,"Single bed","NO single cupboard ","Single study table");
+				d.showdetails();
+				
+				
+					System.out.println("\n\nAre you choise this room ?");
+					System.out.println("Enter Yes(y)or No(n) ");	
+					y = sc.next().charAt(0);
+				
+				if (y=='y'||y=='Y'){
+					System.out.println("\nPlease first enter your id, name and mobile num");
+					
+					System.out.println("Input Student ID : ");
+					String id = sc.next();
+					
+					System.out.println("Input Student Name : ");
+					String name = sc.next();
+					
+					
+					System.out.println("Input Student Mobile Number : ");
+					String mobileNo = sc.next();
+					stu_info st = new stu_info(id,name,mobileNo);
+					
+					System.out.println("\n\tOK!!!!Successfully enter your infromation");
+					System.out.println("Are you want to show your Hostel details now Yes(y/Y) or Not(n/N)");
+					System.out.println("Waiting for your input y or n :");
+					x = sc.next().charAt(0);
+					
+					if (x=='y'||x=='Y'){
+						
+						System.out.println("Your Building name : Beli ");
+						st.show();
+						d.show();
+						
+					}
+					
+				}
+				
+				else if(y=='n'||y=='N'){
+			
+					
+				}
+				
+				
+				break;
+					
+			}
+			
+			
+			
+		
+			}
+		
+		
+		else if(c==3){
+			
+			System.out.println("Building name : Daisy ");
+			System.out.println("Available seats : 32 ");
+			
+			System.out.println("\nWhich room do you want ? ");
+			System.out.println("1. Master bed room ");
+			System.out.println("2. Semi master bed room ");
+			System.out.println("3. Regular Room ");
+			System.out.println("Your input: ");
+			
+			h = sc.nextInt();
+			switch(h){
+				
+				case 1:
+			
+				faci b = new faci(3,5000,"Single bed","Single cupb oard","Single study table");
+				b.showdetails();
+				System.out.println("\n\nAre you choise this room ?");
+				System.out.println("Enter Yes(y)or No(n) ");	
+				y = sc.next().charAt(0);
+				if (y=='y'||y=='Y'){
+					System.out.println("\nPlease first enter your id, name and mobile num");
+					
+					System.out.println("Input Student ID : ");
+					String id = sc.next();
+					
+					System.out.println("Input Student Name : ");
+					String name = sc.next();
+					
+					System.out.println("Input Student Mobile Number : ");
+					String mobileNo = sc.next();
+					stu_info st = new stu_info(id,name,mobileNo);
+					
+					System.out.println("\n\tOK!!!!Successfully enter your infromation");
+					System.out.println("Are you want to show your Hostel details now Yes(y/Y) or Not(n/N)");
+					System.out.println("Waiting for your input y or n :");
+					x = sc.next().charAt(0);
+					
+					if (x=='y'||x=='Y'){
+						
+						System.out.println("Your Building name : Beli ");
+						st.show();
+						b.show();
+						
+					}
+					
+				}
+				
+				else if(y=='n'||y=='N'){
+				
+					
+				}
+				
+				break;
+				
+				case 2:
+				
+				
+					faci s = new faci(4,4500,"Single bed","Single cupboard","Single study table");
+					s.showdetails();
+					
+					
+					System.out.println("\n\nAre you choise this room ?");
+					System.out.println("Enter Yes(y)or No(n) ");	
+					y = sc.next().charAt(0);
+				
+					if (y=='y'||y=='Y'){
+					System.out.println("\nPlease first enter your id, name and mobile num");
+					
+					System.out.println("Input Student ID : ");
+					String id = sc.next();
+					
+					System.out.println("Input Student Name : ");
+					String name = sc.next();
+					
+					
+					System.out.println("Input Student Mobile Number : ");
+					String mobileNo = sc.next();
+					stu_info st = new stu_info(id,name,mobileNo);
+					
+					System.out.println("\n\tOK!!!!Successfully enter your infromation");
+					System.out.println("Are you want to show your Hostel details now Yes(y/Y) or Not(n/N)");
+					System.out.println("Waiting for your input y or n :");
+					x = sc.next().charAt(0);
+					
+					if (x=='y'||x=='Y'){
+						
+						System.out.println("Your Building name : Beli ");
+						st.show();
+						s.show();
+						
+					}
+					
+				}
+				
+				else if(y=='n'||y=='N'){
+				
+				
+				}
+				break;
+				
+				case 3:
+				
+				faci d = new faci(3,3000,"Single bed","NO single cupboard ","Single study table");
+				d.showdetails();
+				
+				
+					System.out.println("\n\nAre you choise this room ?");
+					System.out.println("Enter Yes(y)or No(n) ");	
+					y = sc.next().charAt(0);
+				
+				if (y=='y'||y=='Y'){
+					System.out.println("\nPlease first enter your id, name and mobile num");
+					
+					System.out.println("Input Student ID : ");
+					String id = sc.next();
+					
+					System.out.println("Input Student Name : ");
+					String name = sc.next();
+					
+					
+					System.out.println("Input Student Mobile Number : ");
+					String mobileNo = sc.next();
+					stu_info st = new stu_info(id,name,mobileNo);
+					
+					System.out.println("\n\tOK!!!!Successfully enter your infromation");
+					System.out.println("Are you want to show your Hostel details now Yes(y/Y) or Not(n/N)");
+					System.out.println("Waiting for your input y or n :");
+					x = sc.next().charAt(0);
+					
+					if (x=='y'||x=='Y'){
+						
+						System.out.println("Your Building name : Beli ");
+						st.show();
+						d.show();
+						
+					}
+					
+				}
+				
+				else if(y=='n'||y=='N'){
+			
+					
+				}
+				break;
+					
+			}
+			
+		
+		}
+		
+		else
+			System.out.println("BYE BYE");
+	}
+		
+//ending bracket
+	
+	
+	}
+	
+}
+
+
+
+
+
+
+
+
+//***********************class stu_info**********************
+
+
+
+
+
+package hpack.hpack1;
+
+public class stu_info{
+	public String id;
+	public String name;
+	private String mobileNo;
+	
+	public stu_info(){
+		
+		System.out.println("NO INFORMATION HERE !!!");
+	}
+
+	public stu_info(String id,String name,String mobileNo){
+		
+		this.id = id;
+		this.name = name;
+		this.mobileNo = mobileNo;
+	}
+	
+	
+	public void setid(String id){
+		this.id= id;
+	}
+	public void setname(String name){
+		this.name= name;
+	}
+	public void setmobileNo(String mobileNo){
+		this.mobileNo= mobileNo;
+	}
+	
+	public String getid(){
+		
+		return this.id;
+	}
+	
+	public String getname(){  
+		
+		return this.name;
+	}
+
+	
+	public String getmobileNo(){
+		
+		return this.mobileNo;
+	}
+	
+/*	public void showdetails(){
+		
+		System.out.println("\n\nStudent information : \n");
+		
+		System.out.println("ID : "+id);
+		System.out.println("Name : "+name);
+		System.out.println("Mobile Number : "+mobileNo);
+		
+	}*/
+	public void show(){
+		System.out.println("Your ID : "+id);
+		System.out.println("your Name : "+name);
+		System.out.println("Your Mobile Number : "+mobileNo);
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+//***************************class faci*******************
+
+
+package hpack;
+
+public class faci{
+	public int room_capacity;
+	public double fees;
+	public String bed;
+	public String cupboard;
+	public String table;
+	
+	public faci(){
+		
+		System.out.println("NO INFORMATION HERE !!!");
+	}
+
+	public faci(int room_capacity, double fees, String bed, String cupboard, String table){
+		
+		this.room_capacity = room_capacity;
+		this.fees = fees;
+		this.bed=bed;
+		this.cupboard=cupboard;
+		this.table=table;
+	}
+	
+	/*
+	public void setroom_capacity(int room_capacity){
+		this.room_capacity= room_capacity;
+	}
+	public void setfees(double fees){
+		this.fees= fees;
+	}
+	*/
+	
+	
+	public int getroom_capacity(){
+		
+		return this.room_capacity;
+	}
+	
+	public double getfees(){  
+		
+		return this.fees;
+	}
+	
+	public String getbed(){
+		
+		return this.bed;
+	}
+	
+	public String getcupboard(){  
+		
+		return this.cupboard;
+	}
+	
+	public String gettable(){  
+		
+		return this.table;
+	}
+	
+	public void showdetails(){
+		
+		System.out.println("\n\nRoom information : \n");
+		
+		System.out.println("Room Capacity : "+room_capacity);
+		System.out.println("Room fees : "+fees);
+		System.out.println("Room furniture:\t1."+bed+"\t2." +cupboard+ "\t3."+table);
+		
+	}
+	public void show(){
+		
+		System.out.println("Your Room Capacity : "+room_capacity);
+		System.out.println("Your monthly Room fees : "+fees);
+		System.out.println("Your Room furniture:\t1."+bed+"\t2." +cupboard+ "\t3."+table);
+		
+	}
+}
+
+
+
+
+
+	
